@@ -178,6 +178,9 @@
                 particles = new ParticlePool(settings.particles.length),
                 particleRate = settings.particles.length / settings.particles.duration,
                 time;
+            context.font = 'normal 18pt "楷体"';
+            context.fillText('微信：nanfangyoujialong', 60, 2);
+            context.fillText('淘宝搜索店铺： 晴澜教育店', 60, 2);
             function pointOnHeart(t) {
                 undefined
                 return new Point(
@@ -211,9 +214,6 @@
                 context.closePath();
                 context.fillStyle = '#ea80b0';
                 context.fill();
-                context.font = 'normal 18pt "楷体"';
-                context.fillText('微信：nanfangyoujialong', 60, 200);
-                context.fillText('淘宝搜索店铺： 晴澜教育店', 60, 200);
                 var image = new Image();
                 image.src = canvas.toDataURL();
                 return image;
