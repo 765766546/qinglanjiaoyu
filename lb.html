@@ -11,15 +11,8 @@
 
 <body>
     <div id="app">
-        
-        <div v-if="show==true" style="display: flex;margin:.4rem 0;justify-content: center;align-items: center;">没有数据咯~~~</div>
-        <div v-if="show=='no'">
-            <van-loading size="24px" style="display: flex;margin:.4rem 0;justify-content: center;align-items: center;">加载中...</van-loading>
-        </div>
-        <div v-if="show==false">
             <!-- 遍历图片 -->
             <img v-for="(imgUrl, index) in ImgList" :key="index" :src="imgUrl" />
-        </div>
     </div>
 
     <script type="module">
