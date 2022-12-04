@@ -10,9 +10,10 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" class="rightullidiv">
             <!-- 遍历图片 -->
-            <img v-for="(imgUrl, index) in ImgList" :key="index" :src="imgUrl" />
+            <img v-for="(imgUrl, index) in ImgList" :key="index" :src="imgUrl" class="rightulliimg"/>
+        </div>
     </div>
 
     <script type="module">
@@ -98,6 +99,20 @@
             }
     });
 </script>
+    
+
+<style rel="stylesheet/scss" lang="scss" scoped>
+  .rightullidiv {
+    width: 100%;
+    /*background: #f2f2f2;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .rightulliimg {
+      max-width: 100%;
+    }
+  }
+</style>
 </body>
 
 </html>
