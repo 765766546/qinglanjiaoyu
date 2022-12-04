@@ -10,9 +10,10 @@
 </head>
 
 <body>
-    <div id="app" class="rightullidiv">
+    <div id="app" >
+         <div v-for="(imgUrl, index) in ImgList" :key="index" class="rightullidiv">
             <!-- 遍历图片 -->
-            <img v-for="(imgUrl, index) in ImgList" :key="index" :src="imgUrl" class="rightulliimg"/>
+            <img  :src="imgUrl" class="rightulliimg"/>
         </div>
     </div>
 
